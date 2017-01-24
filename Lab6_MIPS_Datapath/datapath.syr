@@ -1,0 +1,667 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: datapath.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "datapath.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "datapath"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : datapath
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\HalfAdder.v" into library work
+Parsing module <HalfAdder>.
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\FullAdder.v" into library work
+Parsing module <FullAdder>.
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\RCA8.v" into library work
+Parsing module <RCA8>.
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\Subtracter_32.v" into library work
+Parsing module <Subtracter_32>.
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\SetLessThan_32.v" into library work
+Parsing module <SetLessThan_32>.
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\OR_32.v" into library work
+Parsing module <OR_32>.
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\Mux8to1_32bit.v" into library work
+Parsing module <Mux8to1_32bit>.
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\AND_32.v" into library work
+Parsing module <AND_32>.
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\Adder_32.v" into library work
+Parsing module <Adder_32>.
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\signext.v" into library work
+Parsing module <signext>.
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\s12.v" into library work
+Parsing module <s12>.
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\regfile.v" into library work
+Parsing module <regfile>.
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\mux2_5.v" into library work
+Parsing module <mux2_5>.
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\mux2_32.v" into library work
+Parsing module <mux2_32>.
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\flopr.v" into library work
+Parsing module <flopr>.
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\datapath.v" into library work
+Parsing module <datapath>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <datapath>.
+
+Elaborating module <flopr>.
+
+Elaborating module <Adder_32>.
+
+Elaborating module <RCA8>.
+
+Elaborating module <FullAdder>.
+
+Elaborating module <HalfAdder>.
+WARNING:HDLCompiler:189 - "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\datapath.v" Line 39: Size mismatch in connection of port <addend>. Formal port size is 32-bit while actual signal size is 31-bit.
+
+Elaborating module <s12>.
+WARNING:HDLCompiler:1127 - "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\datapath.v" Line 49: Assignment to pcbranch ignored, since the identifier is never used
+
+Elaborating module <mux2_32>.
+
+Elaborating module <regfile>.
+
+Elaborating module <mux2_5>.
+
+Elaborating module <signext>.
+
+Elaborating module <ALU>.
+
+Elaborating module <AND_32>.
+
+Elaborating module <OR_32>.
+
+Elaborating module <Subtracter_32>.
+
+Elaborating module <SetLessThan_32>.
+
+Elaborating module <Mux8to1_32bit>.
+WARNING:HDLCompiler:634 - "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\datapath.v" Line 26: Net <pcnextbr[31]> does not have a driver.
+WARNING:Xst:2972 - "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\datapath.v" line 43. All outputs of instance <immsh> of block <s12> are unconnected in block <datapath>. Underlying logic will be removed.
+WARNING:Xst:2972 - "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\datapath.v" line 47. All outputs of instance <pcadd2> of block <Adder_32> are unconnected in block <datapath>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <datapath>.
+    Related source file is "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\datapath.v".
+WARNING:Xst:647 - Input <instr<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <pcsrc> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\datapath.v" line 47: Output port <sum> of the instance <pcadd2> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <pc<31:8>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <pcnextbr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <datapath> synthesized.
+
+Synthesizing Unit <flopr>.
+    Related source file is "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\flopr.v".
+    Found 8-bit register for signal <q>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <flopr> synthesized.
+
+Synthesizing Unit <Adder_32>.
+    Related source file is "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\Adder_32.v".
+INFO:Xst:3210 - "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\Adder_32.v" line 26: Output port <Cout> of the instance <rca8_3> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Adder_32> synthesized.
+
+Synthesizing Unit <RCA8>.
+    Related source file is "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\RCA8.v".
+    Summary:
+	no macro.
+Unit <RCA8> synthesized.
+
+Synthesizing Unit <FullAdder>.
+    Related source file is "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\FullAdder.v".
+    Summary:
+	no macro.
+Unit <FullAdder> synthesized.
+
+Synthesizing Unit <HalfAdder>.
+    Related source file is "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\HalfAdder.v".
+    Summary:
+Unit <HalfAdder> synthesized.
+
+Synthesizing Unit <mux2_32>.
+    Related source file is "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\mux2_32.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux2_32> synthesized.
+
+Synthesizing Unit <regfile>.
+    Related source file is "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\regfile.v".
+    Found 32x32-bit dual-port RAM <Mram_rf> for signal <rf>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   2 Multiplexer(s).
+Unit <regfile> synthesized.
+
+Synthesizing Unit <mux2_5>.
+    Related source file is "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\mux2_5.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux2_5> synthesized.
+
+Synthesizing Unit <signext>.
+    Related source file is "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\signext.v".
+    Summary:
+	no macro.
+Unit <signext> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\ALU.v".
+    Summary:
+	no macro.
+Unit <ALU> synthesized.
+
+Synthesizing Unit <AND_32>.
+    Related source file is "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\AND_32.v".
+    Summary:
+	no macro.
+Unit <AND_32> synthesized.
+
+Synthesizing Unit <OR_32>.
+    Related source file is "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\OR_32.v".
+    Summary:
+	no macro.
+Unit <OR_32> synthesized.
+
+Synthesizing Unit <Subtracter_32>.
+    Related source file is "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\Subtracter_32.v".
+    Found 32-bit subtractor for signal <difference> created at line 7.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Subtracter_32> synthesized.
+
+Synthesizing Unit <SetLessThan_32>.
+    Related source file is "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\SetLessThan_32.v".
+    Found 32-bit comparator greater for signal <argA[31]_argB[31]_LessThan_1_o> created at line 7
+    Summary:
+	inferred   1 Comparator(s).
+Unit <SetLessThan_32> synthesized.
+
+Synthesizing Unit <Mux8to1_32bit>.
+    Related source file is "D:\Workspace\CECS 225\Lab6_MIPS_Datapath\Mux8to1_32bit.v".
+    Found 32-bit 5-to-1 multiplexer for signal <Out> created at line 11.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Mux8to1_32bit> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port RAM                               : 2
+# Adders/Subtractors                                   : 1
+ 32-bit subtractor                                     : 1
+# Registers                                            : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 7
+ 32-bit 2-to-1 multiplexer                             : 5
+ 32-bit 5-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 128
+ 1-bit xor2                                            : 128
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <fa0> is unconnected in block <rca8_0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <fa1> is unconnected in block <rca8_0>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ha1> is unconnected in block <fa2>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <regfile>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_rf> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | fall     |
+    |     weA            | connected to signal <we3>           | high     |
+    |     addrA          | connected to signal <wa3>           |          |
+    |     diA            | connected to signal <wd3>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <ra1>           |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_rf1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | fall     |
+    |     weA            | connected to signal <we3>           | high     |
+    |     addrA          | connected to signal <wa3>           |          |
+    |     diA            | connected to signal <wd3>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <ra2>           |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <regfile> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port distributed RAM                   : 2
+# Adders/Subtractors                                   : 1
+ 32-bit subtractor                                     : 1
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 7
+ 32-bit 2-to-1 multiplexer                             : 5
+ 32-bit 5-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 128
+ 1-bit xor2                                            : 128
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2973 - All outputs of instance <pcadd1/rca8_3> of block <RCA8> are unconnected in block <datapath>. Underlying logic will be removed.
+WARNING:Xst:2973 - All outputs of instance <pcadd1/rca8_2> of block <RCA8> are unconnected in block <datapath>. Underlying logic will be removed.
+WARNING:Xst:2973 - All outputs of instance <pcadd1/rca8_1> of block <RCA8> are unconnected in block <datapath>. Underlying logic will be removed.
+WARNING:Xst:2973 - All outputs of instance <pcadd1/rca8_0> of block <RCA8> are unconnected in block <datapath>. Underlying logic will be removed.
+
+Optimizing unit <flopr> ...
+
+Optimizing unit <datapath> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <RCA8> ...
+
+Optimizing unit <regfile> ...
+WARNING:Xst:1710 - FF/Latch <pcreg/q_1> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <pcreg/q_0> (without init value) has a constant value of 0 in block <datapath>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block datapath, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : datapath.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 532
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 16
+#      LUT3                        : 16
+#      LUT4                        : 92
+#      LUT5                        : 60
+#      LUT6                        : 253
+#      MUXCY                       : 47
+#      MUXF7                       : 13
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 6
+#      FDC                         : 6
+# RAMS                             : 14
+#      RAM32M                      : 10
+#      RAM32X1D                    : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 164
+#      IBUF                        : 67
+#      OBUF                        : 97
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                  486  out of  63400     0%  
+    Number used as Logic:               438  out of  63400     0%  
+    Number used as Memory:               48  out of  19000     0%  
+       Number used as RAM:               48
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    486
+   Number with an unused Flip Flop:     486  out of    486   100%  
+   Number with an unused LUT:             0  out of    486     0%  
+   Number of fully used LUT-FF pairs:     0  out of    486     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                         172
+ Number of bonded IOBs:                 165  out of    210    78%  
+    IOB Flip Flops/Latches:               6
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 20    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.090ns (Maximum Frequency: 196.468MHz)
+   Minimum input arrival time before clock: 4.817ns
+   Maximum output required time after clock: 7.583ns
+   Maximum combinational path delay: 7.295ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.090ns (frequency: 196.468MHz)
+  Total number of paths / destination ports: 10228 / 64
+-------------------------------------------------------------------------
+Delay:               5.090ns (Levels of Logic = 6)
+  Source:            rf/Mram_rf13 (RAM)
+  Destination:       rf/Mram_rf13 (RAM)
+  Source Clock:      clk falling
+  Destination Clock: clk falling
+
+  Data Path: rf/Mram_rf13 to rf/Mram_rf13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM32M:WCLK->DOA1     3   1.345   0.305  rf/Mram_rf13 (rf/ra2[4]_read_port_6_OUT<13>)
+     LUT4:I3->O            7   0.097   0.721  srcbmux/Mmux_out51 (srcb<13>)
+     LUT6:I0->O            3   0.097   0.305  alu/_add/rca8_1/fa3/Cout1_SW1 (N49)
+     LUT6:I5->O            1   0.097   0.683  alu/_add/rca8_1/fa5/Cout1_SW1 (N112)
+     LUT5:I0->O            2   0.097   0.299  alu/_add/rca8_1/fa7/Cout1 (alu/_add/Carry1_2)
+     LUT6:I5->O            3   0.097   0.305  alu/_m81/Mmux_Out8 (aluresult_16_OBUF)
+     LUT3:I2->O            2   0.097   0.283  resmux/Mmux_out81 (result<16>)
+     RAM32M:DIC0               0.260          rf/Mram_rf4
+    ----------------------------------------
+    Total                      5.090ns (2.187ns logic, 2.903ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 105908 / 180
+-------------------------------------------------------------------------
+Offset:              4.817ns (Levels of Logic = 8)
+  Source:            instr<16> (PAD)
+  Destination:       rf/Mram_rf13 (RAM)
+  Destination Clock: clk falling
+
+  Data Path: instr<16> to rf/Mram_rf13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            53   0.001   0.793  instr_16_IBUF (instr_16_IBUF)
+     LUT5:I0->O           32   0.097   0.486  rf/GND_9_o_GND_9_o_not_equal_5_o1 (rf/GND_9_o_GND_9_o_not_equal_5_o)
+     LUT4:I2->O            7   0.097   0.721  srcbmux/Mmux_out51 (srcb<13>)
+     LUT6:I0->O            3   0.097   0.305  alu/_add/rca8_1/fa3/Cout1_SW1 (N49)
+     LUT6:I5->O            1   0.097   0.683  alu/_add/rca8_1/fa5/Cout1_SW1 (N112)
+     LUT5:I0->O            2   0.097   0.299  alu/_add/rca8_1/fa7/Cout1 (alu/_add/Carry1_2)
+     LUT6:I5->O            3   0.097   0.305  alu/_m81/Mmux_Out8 (aluresult_16_OBUF)
+     LUT3:I2->O            2   0.097   0.283  resmux/Mmux_out81 (result<16>)
+     RAM32M:DIC0               0.260          rf/Mram_rf4
+    ----------------------------------------
+    Total                      4.817ns (0.940ns logic, 3.877ns route)
+                                       (19.5% logic, 80.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 9158 / 71
+-------------------------------------------------------------------------
+Offset:              7.583ns (Levels of Logic = 11)
+  Source:            rf/Mram_rf12 (RAM)
+  Destination:       zero (PAD)
+  Source Clock:      clk falling
+
+  Data Path: rf/Mram_rf12 to zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAM32M:WCLK->DOB1     3   1.362   0.305  rf/Mram_rf12 (rf/ra2[4]_read_port_6_OUT<9>)
+     LUT4:I3->O           11   0.097   0.341  srcbmux/Mmux_out321 (srcb<9>)
+     LUT6:I5->O            2   0.097   0.688  srcbmux/Mmux_out21_SW3 (N135)
+     LUT6:I1->O            3   0.097   0.521  alu/_add/rca8_1/fa1/Cout1_SW0 (N85)
+     LUT5:I2->O           12   0.097   0.346  alu/_add/rca8_1/fa5/Cout1 (alu/_add/rca8_1/c5)
+     LUT5:I4->O            9   0.097   0.720  alu/_add/rca8_2/fa5/Cout1 (alu/_add/rca8_2/c5)
+     LUT6:I1->O            1   0.097   0.683  alu/_add/rca8_3/fa1/Cout1 (alu/_add/rca8_3/c1)
+     LUT6:I1->O            1   0.097   0.511  alu/_m81/Mmux_Out211 (alu/_m81/Mmux_Out21)
+     LUT4:I1->O            2   0.097   0.299  alu/_m81/Mmux_Out212 (aluresult_28_OBUF)
+     LUT6:I5->O            1   0.097   0.556  alu/Zero_Flag3 (alu/Zero_Flag2)
+     LUT6:I2->O            1   0.097   0.279  alu/Zero_Flag7 (zero_OBUF)
+     OBUF:I->O                 0.000          zero_OBUF (zero)
+    ----------------------------------------
+    Total                      7.583ns (2.332ns logic, 5.251ns route)
+                                       (30.8% logic, 69.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 93830 / 65
+-------------------------------------------------------------------------
+Delay:               7.295ns (Levels of Logic = 13)
+  Source:            instr<16> (PAD)
+  Destination:       zero (PAD)
+
+  Data Path: instr<16> to zero
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            53   0.001   0.793  instr_16_IBUF (instr_16_IBUF)
+     LUT5:I0->O           32   0.097   0.486  rf/GND_9_o_GND_9_o_not_equal_5_o1 (rf/GND_9_o_GND_9_o_not_equal_5_o)
+     LUT4:I2->O            7   0.097   0.721  srcbmux/Mmux_out291 (srcb<6>)
+     LUT6:I0->O            4   0.097   0.309  alu/_add/rca8_0/fa7/Cout1_SW0 (N51)
+     LUT6:I5->O            3   0.097   0.521  alu/_add/rca8_1/fa1/Cout1_SW0 (N85)
+     LUT5:I2->O           12   0.097   0.346  alu/_add/rca8_1/fa5/Cout1 (alu/_add/rca8_1/c5)
+     LUT5:I4->O            9   0.097   0.720  alu/_add/rca8_2/fa5/Cout1 (alu/_add/rca8_2/c5)
+     LUT6:I1->O            1   0.097   0.683  alu/_add/rca8_3/fa1/Cout1 (alu/_add/rca8_3/c1)
+     LUT6:I1->O            1   0.097   0.511  alu/_m81/Mmux_Out211 (alu/_m81/Mmux_Out21)
+     LUT4:I1->O            2   0.097   0.299  alu/_m81/Mmux_Out212 (aluresult_28_OBUF)
+     LUT6:I5->O            1   0.097   0.556  alu/Zero_Flag3 (alu/Zero_Flag2)
+     LUT6:I2->O            1   0.097   0.279  alu/Zero_Flag7 (zero_OBUF)
+     OBUF:I->O                 0.000          zero_OBUF (zero)
+    ----------------------------------------
+    Total                      7.295ns (1.068ns logic, 6.227ns route)
+                                       (14.6% logic, 85.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    5.090|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 15.91 secs
+ 
+--> 
+
+Total memory usage is 475404 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

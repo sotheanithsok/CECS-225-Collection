@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Hai Document/Xilinx/Lab3_ControlUnit/Control_Unit_Tester_isim_beh.exe" -prj "D:/Hai Document/Xilinx/Lab3_ControlUnit/Control_Unit_Tester_beh.prj" "work.Control_Unit_Tester" "work.glbl" 

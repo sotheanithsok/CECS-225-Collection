@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Workspace/CECS 225/Lab7_MIPS_Processor/top_tester_isim_beh.exe" -prj "D:/Workspace/CECS 225/Lab7_MIPS_Processor/top_tester_beh.prj" "work.top_tester" "work.glbl" 

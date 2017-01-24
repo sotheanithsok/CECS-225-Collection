@@ -1,0 +1,52 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/datapath_tester_isim_beh.exe" -prj "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/datapath_tester_beh.prj" "work.datapath_tester" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/HalfAdder.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/FullAdder.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/RCA8.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/Subtracter_32.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/SetLessThan_32.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/OR_32.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/Mux8to1_32bit.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/AND_32.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/Adder_32.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/signext.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/s12.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/regfile.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/mux2_5.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/mux2_32.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/flopr.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/ALU.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/datapath.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/datapath_tester.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/datapath.v" Line 39: Size mismatch in connection of port <addend>. Formal port size is 32-bit while actual signal size is 31-bit.
+Completed static elaboration
+Compiling module flopr
+Compiling module HalfAdder
+Compiling module FullAdder
+Compiling module RCA8
+Compiling module Adder_32
+Compiling module s12
+Compiling module mux2_32
+Compiling module regfile
+Compiling module mux2_5
+Compiling module signext
+Compiling module AND_32
+Compiling module OR_32
+Compiling module Subtracter_32
+Compiling module SetLessThan_32
+Compiling module Mux8to1_32bit
+Compiling module ALU
+Compiling module datapath
+Compiling module datapath_tester
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 19 Verilog Units
+Built simulation executable D:/Workspace/CECS 225/Lab6_MIPS_Datapath/datapath_tester_isim_beh.exe
+Fuse Memory Usage: 28716 KB
+Fuse CPU Usage: 437 ms

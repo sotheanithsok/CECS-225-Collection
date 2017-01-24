@@ -1,0 +1,80 @@
+ISim log file
+Running: D:\Workspace\CECS 225\Lab6_MIPS_Datapath\datapath_tester_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Workspace/CECS 225/Lab6_MIPS_Datapath/datapath_tester_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING:  For instance uut/pcadd1/, width 32 of formal port addend is not equal to width 31 of actual constant.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Begin MIPS datapath Test
+
+Show initial register contents
+Scan Registers for valid data
+The following registers have data
+register          0 = 32'h00000000
+register         11 = 32'h00000032
+register         12 = 32'h00000064
+register         13 = 32'h00000096
+register         14 = 32'h000000c8
+register         15 = 32'h000000fa
+register         31 = 32'hffffffff
+
+Test case 0
+check result of add $16, $14, $12
+Expected Result: $16 = 0000012c
+Actual Result: $16 = 0000012c
+Test Passed!
+
+Test case 1
+check result of sub $17, $15, $11
+Expected Result: $17 = 000000c8
+Actual Result: $17 = 000000c8
+Test Passed!
+
+Test case 2
+check result of and $18, $31, $0
+Expected Result: $18 = 00000000
+Actual Result: $18 = 00000000
+Test Passed!
+
+Test case 3
+check result of or $19, $17, $31
+Expected Result: $19 = ffffffff
+Actual Result: $19 = ffffffff
+Test Passed!
+
+Test case 4
+check result of slt $20, $17, $16
+Expected Result: $20 = 00000001
+Actual Result: $20 = 00000001
+Test Passed!
+
+Test case 5
+check result of slt $21, $16, $17
+Expected Result: $21 = 00000000
+Actual Result: $21 = 00000000
+Test Passed!
+
+Show final register contents
+Scan Registers for valid data
+The following registers have data
+register          0 = 32'h00000000
+register         11 = 32'h00000032
+register         12 = 32'h00000064
+register         13 = 32'h00000096
+register         14 = 32'h000000c8
+register         15 = 32'h000000fa
+register         16 = 32'h0000012c
+register         17 = 32'h000000c8
+register         18 = 32'h00000000
+register         19 = 32'hffffffff
+register         20 = 32'h00000001
+register         21 = 32'h00000000
+register         31 = 32'hffffffff
+
+End MIPS datapath Test
+Stopped at time : 81 ns : File "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/datapath_tester.v" Line 203

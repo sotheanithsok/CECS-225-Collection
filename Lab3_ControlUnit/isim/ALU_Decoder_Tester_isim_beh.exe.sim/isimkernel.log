@@ -1,0 +1,28 @@
+Command line:
+   ALU_Decoder_Tester_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52399
+
+Fri Sep 09 13:49:03 2016
+
+
+ Elaboration Time: 0.1875 sec
+
+ Current Memory Usage: 845.439 Meg
+
+ Total Signals          : 17
+ Total Nets             : 24
+ Total Signal Drivers   : 10
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 112
+
+ Total Simulation Time: 0.25 sec
+
+ Current Memory Usage: 688.153 Meg
+
+Fri Sep 09 13:51:27 2016
+

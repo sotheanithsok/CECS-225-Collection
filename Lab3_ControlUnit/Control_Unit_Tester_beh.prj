@@ -1,0 +1,5 @@
+verilog work "Main_Decoder.v"
+verilog work "ALU_Decoder.v"
+verilog work "Control_Unit.v"
+verilog work "Control_Unit_Tester.v"
+verilog work "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

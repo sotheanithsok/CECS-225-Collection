@@ -1,0 +1,10 @@
+Command line:
+   HalfAdder_Tester_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  56381
+
+Fri Aug 26 14:25:24 2016
+
+
+ Elaboration Time: 0.0936 sec

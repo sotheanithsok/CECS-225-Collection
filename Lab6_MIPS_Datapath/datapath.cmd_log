@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/datapath.xst" -ofn "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/datapath.syr" 
+xst -intstyle ise -ifn "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/datapath.xst" -ofn "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/datapath.syr" 
+xst -intstyle ise -ifn "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/datapath.xst" -ofn "D:/Workspace/CECS 225/Lab6_MIPS_Datapath/datapath.syr" 

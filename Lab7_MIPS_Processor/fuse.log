@@ -1,0 +1,65 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Workspace/CECS 225/Lab7_MIPS_Processor/top_tester_isim_beh.exe" -prj "D:/Workspace/CECS 225/Lab7_MIPS_Processor/top_tester_beh.prj" "work.top_tester" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/HalfAdder.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/FullAdder.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/RCA8.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/Subtracter_32.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/SetLessThan_32.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/OR_32.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/Mux8to1_32bit.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/AND_32.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/Adder_32.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/signext.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/s12.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/regfile.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/mux2_5.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/mux2_32.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/maindec.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/flopr.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/aludec.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/ALU.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/datapath.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/controller.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/mips.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/imem.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/dmem.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/top.v" into library work
+Analyzing Verilog file "D:/Workspace/CECS 225/Lab7_MIPS_Processor/top_tester.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module maindec
+Compiling module aludec
+Compiling module controller
+Compiling module flopr
+Compiling module HalfAdder
+Compiling module FullAdder
+Compiling module RCA8
+Compiling module Adder_32
+Compiling module s12
+Compiling module mux2_32
+Compiling module regfile
+Compiling module mux2_5
+Compiling module signext
+Compiling module AND_32
+Compiling module OR_32
+Compiling module Subtracter_32
+Compiling module SetLessThan_32
+Compiling module Mux8to1_32bit
+Compiling module ALU
+Compiling module datapath
+Compiling module mips
+Compiling module imem
+Compiling module dmem
+Compiling module top
+Compiling module top_tester
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 11 sub-compilation(s) to finish...
+Compiled 26 Verilog Units
+Built simulation executable D:/Workspace/CECS 225/Lab7_MIPS_Processor/top_tester_isim_beh.exe
+Fuse Memory Usage: 28008 KB
+Fuse CPU Usage: 483 ms

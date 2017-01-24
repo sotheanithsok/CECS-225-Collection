@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Workspace/CECS 225/Lab5_RegisterFile/regfile_Tester_isim_beh.exe" -prj "D:/Workspace/CECS 225/Lab5_RegisterFile/regfile_Tester_beh.prj" "work.regfile_Tester" "work.glbl" 
