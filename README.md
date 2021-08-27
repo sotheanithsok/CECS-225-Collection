@@ -6,7 +6,7 @@ A collection of assignments for the CECS 225 class.
 ## Prerequisites
  - [Verilog](https://www.xilinx.com/)
 
-## Author
+## Authors
  - [Sotheanith Sok](https://github.com/sotheanith)
 
 ## Course
