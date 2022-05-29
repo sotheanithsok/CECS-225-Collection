@@ -7,7 +7,7 @@ A collection of assignments for the CECS 225 class.
  - [Verilog](https://www.xilinx.com/)
 
 ## Authors
- - [Sotheanith Sok](https://github.com/sotheanith)
+ - [Sotheanith Sok](https://github.com/sotheanith-sok)
 
 ## Course
  - [CECS 225 - Digital Logic and Assembly Programming](http://catalog.csulb.edu/preview_course_nopop.php?catoid=5&coid=39973)
